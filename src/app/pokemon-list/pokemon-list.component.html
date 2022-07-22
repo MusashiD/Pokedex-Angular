@@ -1,0 +1,6 @@
+<div class="pokemon-list">
+  <app-pokemon-card  *ngFor="let pokemon of pokemonService.pokemons"
+  [pokemon]="pokemon['name']" 
+  [contagem]="contador(pokemonService.pokemons.indexOf(pokemon)+1)"></app-pokemon-card>
+
+</div>
